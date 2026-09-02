@@ -1,27 +1,10 @@
-# Align Software Consulting website
+# Align Software Consulting — Version 2
 
-Static HTML/CSS/JavaScript site designed for GitHub + Cloudflare Pages.
+A bolder editorial redesign inspired by the visual language of modern consulting firms: large typography, strong color blocks, asymmetric composition, modular storytelling, and direct business-outcome messaging.
 
-## Files
-- `index.html` — page content
-- `styles.css` — full responsive styling
-- `script.js` — navigation and reveal animation
+This is an original Align design, not a copy of any other firm's website.
 
-## Deploy to Cloudflare Pages
+## Deploy
+Replace the existing repository files with index.html, styles.css, and script.js, then commit and push. Cloudflare Pages should deploy automatically from the connected GitHub repo.
 
-1. Create a GitHub repository and put these files in the repository root.
-2. Push to GitHub.
-3. In Cloudflare, create/import a Pages project from the repository.
-4. Framework preset: **None**
-5. Build command: leave blank
-6. Build output directory: `/` (or leave at the default root setting if Cloudflare accepts it)
-7. Deploy.
-
-## Before launch
-
-Search `index.html` for:
-- `hello@alignsoft.net` — replace if you want a different public email.
-- `St. Louis, Missouri` — change if desired.
-- Service descriptions — edit freely.
-
-There are no image assets. The visual design is built entirely with HTML/CSS/SVG, so deployment is lightweight and there is no separate image hosting requirement.
+The public contact email is hello@alignsoft.net.
