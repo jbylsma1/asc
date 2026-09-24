@@ -1,11 +1,14 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('#nav');
-menu?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
+
+function setMenu(open) {
+  nav.classList.toggle('open', open);
   menu.setAttribute('aria-expanded', String(open));
-});
-nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menu?.setAttribute('aria-expanded', 'false');
-}));
+  menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+}
+
+menu?.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
 document.getElementById('year').textContent = new Date().getFullYear();
