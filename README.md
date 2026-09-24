@@ -14,4 +14,12 @@ AI-first consultancy:
 - `script.js`: mobile menu and footer year
 
 ## Deploy
-Commit to the deployed branch and push. The public contact email is hello@alignsoft.net.
+Hosted on GitHub Pages (Settings → Pages → Deploy from branch → `main` / root).
+Pushing to `main` publishes the site. The `CNAME` file sets the custom domain
+(`www.alignsoft.net`); don't delete it.
+
+DNS is at Cloudflare:
+- `alignsoft.net`: A → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+- `www`: CNAME → jbylsma1.github.io
+
+The public contact email is hello@alignsoft.net.
