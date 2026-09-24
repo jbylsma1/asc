@@ -13,6 +13,10 @@ AI-first consultancy:
 - `styles.css`: design tokens at the top (`:root`)
 - `script.js`: mobile menu and footer year
 
+## Cache busting
+When you change `styles.css` or `script.js`, bump the `?v=` date on their
+`<link>`/`<script>` tags in `index.html` so browsers fetch the new files.
+
 ## Deploy
 Hosted on a Cloudflare Worker (`asc`) with static assets, built from this repo.
 Pushing to `main` deploys the site. The Worker is attached to `alignsoft.net`
