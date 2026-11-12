@@ -295,3 +295,6 @@ details p { color: var(--muted); margin: -4px 0 24px; max-width: 660px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+.site-footer a:not(.logo) { color: var(--white); text-decoration: none; }
+.site-footer a:not(.logo):hover { color: var(--signal); }
